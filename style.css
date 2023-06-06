@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/*
+Theme Name: MovilizadxsPorLaDignidad
+Theme URI: 
+Author: Juan Jara Zarria - Eduardo Cayuqueo | Colectivo 
+Author URI: https://movilizadxs.cl
+Description: Tema de wordpress personalizado para web oficial del colectivo Movilizadxs por la dignidad. 
+Version: 1.0.0
+Tags: themes, theme, wordpress, colectivo, organización, movilizados, dignidad, política, chile
+Licence: GNU General Public Licence v2 or later
+Licence URI: http://www.gnu.org/licences/gpl-2.0.html
+Text Domain: movilizadxs
+*/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "sans-serif";
+}
+
+/* @font-face {
+    font-family: 'Poiret One';
+    src: url('../font/CaviarDreams.ttf');
+} */
+h1, h2, h3, h4, h5, h6, p, ul, li, a, p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+/*# sourceMappingURL=style.css.map */
