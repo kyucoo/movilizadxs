@@ -41,9 +41,28 @@ ul {
   width: 100%;
   margin: 0 0 24px 0;
 }
+.nuestroTrabajo .wrapp .wrapp__titleDiv .wrapp__titleDiv--h1 {
+  color: #5D4FB0;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.nuestroTrabajo .wrapp .wrapp__titleDiv .wrapp__titleDiv--h1::before {
+  content: "";
+  display: inline-block;
+  width: 0.5em;
+  height: 1em;
+  background-color: #FF6B6B;
+  margin-right: 16px;
+}
 .nuestroTrabajo .wrapp .wrapp__inforDiv {
   width: 100%;
   margin: 24px 0 48px 0;
+}
+.nuestroTrabajo .wrapp .wrapp__inforDiv .wrapp__inforDiv--p {
+  color: #1a1a1a;
+  font-size: 1.2em;
+  padding: 8px 16px;
 }
 .nuestroTrabajo .wrapp .wrapp__contenedor {
   width: 100%;

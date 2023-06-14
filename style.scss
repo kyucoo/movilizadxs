@@ -10,7 +10,6 @@ Licence: GNU General Public Licence v2 or later
 Licence URI: http://www.gnu.org/licences/gpl-2.0.html
 Text Domain: movilizadxs
 */
-$brown:#b09067;
 $red: #FF6B6B;
 $green: #8AD17E;
 $yellow: #FFE459;
@@ -44,10 +43,29 @@ ul{
         .wrapp__titleDiv{
             width: 100%;
             margin: 0 0 24px 0;
+            .wrapp__titleDiv--h1{
+                color: $purple;
+                font-size: 2.5em;
+                text-transform: uppercase;
+                font-weight: bold;
+                &::before{
+                    content: '';
+                    display: inline-block;
+                    width: 0.5em;
+                    height: 1em;
+                    background-color: $red;
+                    margin-right: 16px;
+                }
+            }
         }
         .wrapp__inforDiv{
             width: 100%;
             margin: 24px 0 48px 0;
+            .wrapp__inforDiv--p{
+                color: $greyDark;
+                font-size: 1.2em;
+                padding: 8px 16px;
+            }
         }
         .wrapp__contenedor{
             width: 100%;

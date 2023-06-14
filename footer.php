@@ -12,7 +12,7 @@
                         <h3 class="wrapp__inforDiv--title">Formas de contacto</h3>
                         <ul class="wrapp__inforDiv--ul">
                             <li class="ul-li"><p class="ul-li__p">Instagram: @moviliza2.porla.dignidad</p></li>
-                            <li class="ul-li"><p class="ul-li__p">Facebook: h􀆩ps://www.facebook.com/moviliza2porladignidad</p></li>
+                            <li class="ul-li"><p class="ul-li__p">Facebook: https://www.facebook.com/moviliza2porladignidad</p></li>
                             <li class="ul-li"><p class="ul-li__p">Email: moviliza2.porla.dignidad@gmail.com</p></li>
                         </ul>
                     </div>
