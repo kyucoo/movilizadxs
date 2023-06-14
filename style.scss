@@ -11,13 +11,19 @@ Licence URI: http://www.gnu.org/licences/gpl-2.0.html
 Text Domain: movilizadxs
 */
 $brown:#b09067;
+$red: #FF6B6B;
+$green: #8AD17E;
+$yellow: #FFE459;
+$purple: #5D4FB0;
+$wh: #ffffff; 
+$greyDark: #1a1a1a;
 
 html{
     scroll-behavior: smooth;
 }
 
 body{
-    font-family: "sans-serif";
+    font-family:sans-serif;
 }
 /* @font-face {
     font-family: 'Poiret One';
@@ -29,4 +35,72 @@ h1, h2, h3, h4, h5, h6, p, ul, li, a, p{
 }
 ul{
     list-style: none;
+}
+.nuestroTrabajo{
+    .wrapp{
+        .wrapp__inforDiv{
+
+        }
+        .wrapp__contenedor{
+            width: 100%;
+            max-width: 85%;
+            height: auto;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            .wrapp__contenedor--card{
+                width: calc(100% / 4 );
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-items: center;
+                transition: ease-in .3s all;
+                transform: scale(1, 1);
+                .card__container{
+                    width:75%;
+                    padding: 24px 0;
+                    border-radius: 26px;
+                    background: $wh;
+                    box-shadow:  -17px 17px 34px #a6a6a6,
+                                17px -17px 34px #ffffff;
+                    overflow: hidden;
+                    .card__divImg{
+                        width: 100%;
+                        padding: 24px 16px 0 16px;
+                        .card__divImg--img{
+                            object-fit: contain;
+                            object-position: center;
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                    .card__divInfor{
+                        display: flex;
+                        flex-flow: row wrap;
+                        justify-content: flex-start;
+                        align-items: center;
+                        padding: 24px 16px;
+                        .card__divInfor--h2{
+                            font-size: 1.2em;
+                            color: $greyDark;
+                            font-weight: bold;
+                        }
+                        .card__divInfor--p{
+                            font-size: 0.9em;
+                            color: $greyDark;
+                            .year{
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+                &:hover{
+                    text-decoration: none;
+                    transform: scale(1.03, 1.03);
+                }
+            }
+        }
+    }
 }

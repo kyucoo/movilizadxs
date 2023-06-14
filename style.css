@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  font-family: "sans-serif";
+  font-family: sans-serif;
 }
 
 /* @font-face {
@@ -30,6 +30,67 @@ h1, h2, h3, h4, h5, h6, p, ul, li, a, p {
 
 ul {
   list-style: none;
+}
+
+.nuestroTrabajo .wrapp .wrapp__contenedor {
+  width: 100%;
+  max-width: 85%;
+  height: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.nuestroTrabajo .wrapp .wrapp__contenedor .wrapp__contenedor--card {
+  width: 25%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  transition: ease-in 0.3s all;
+  transform: scale(1, 1);
+}
+.nuestroTrabajo .wrapp .wrapp__contenedor .wrapp__contenedor--card .card__container {
+  width: 75%;
+  padding: 24px 0;
+  border-radius: 26px;
+  background: #ffffff;
+  box-shadow: -17px 17px 34px #a6a6a6, 17px -17px 34px #ffffff;
+  overflow: hidden;
+}
+.nuestroTrabajo .wrapp .wrapp__contenedor .wrapp__contenedor--card .card__container .card__divImg {
+  width: 100%;
+  padding: 24px 16px 0 16px;
+}
+.nuestroTrabajo .wrapp .wrapp__contenedor .wrapp__contenedor--card .card__container .card__divImg .card__divImg--img {
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  height: auto;
+}
+.nuestroTrabajo .wrapp .wrapp__contenedor .wrapp__contenedor--card .card__container .card__divInfor {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 24px 16px;
+}
+.nuestroTrabajo .wrapp .wrapp__contenedor .wrapp__contenedor--card .card__container .card__divInfor .card__divInfor--h2 {
+  font-size: 1.2em;
+  color: #1a1a1a;
+  font-weight: bold;
+}
+.nuestroTrabajo .wrapp .wrapp__contenedor .wrapp__contenedor--card .card__container .card__divInfor .card__divInfor--p {
+  font-size: 0.9em;
+  color: #1a1a1a;
+}
+.nuestroTrabajo .wrapp .wrapp__contenedor .wrapp__contenedor--card .card__container .card__divInfor .card__divInfor--p .year {
+  font-weight: bold;
+}
+.nuestroTrabajo .wrapp .wrapp__contenedor .wrapp__contenedor--card:hover {
+  text-decoration: none;
+  transform: scale(1.03, 1.03);
 }
 
 /*# sourceMappingURL=style.css.map */
