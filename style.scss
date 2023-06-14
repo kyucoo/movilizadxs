@@ -10,14 +10,19 @@ Licence: GNU General Public Licence v2 or later
 Licence URI: http://www.gnu.org/licences/gpl-2.0.html
 Text Domain: movilizadxs
 */
-$brown:#b09067;
+$red: #FF6B6B;
+$green: #8AD17E;
+$yellow: #FFE459;
+$purple: #5D4FB0;
+$wh: #ffffff; 
+$greyDark: #1a1a1a;
 
 html{
     scroll-behavior: smooth;
 }
 
 body{
-    font-family: "sans-serif";
+    font-family:sans-serif;
 }
 /* @font-face {
     font-family: 'Poiret One';
@@ -29,4 +34,150 @@ h1, h2, h3, h4, h5, h6, p, ul, li, a, p{
 }
 ul{
     list-style: none;
+}
+.nuestroTrabajo{
+    width: 100%;
+    max-width: 85%;
+    margin: 48px auto;
+    .wrapp{
+        .wrapp__titleDiv{
+            width: 100%;
+            margin: 0 0 24px 0;
+            .wrapp__titleDiv--h1{
+                color: $purple;
+                font-size: 2.5em;
+                text-transform: uppercase;
+                font-weight: bold;
+                &::before{
+                    content: '';
+                    display: inline-block;
+                    width: 0.5em;
+                    height: 1em;
+                    background-color: $red;
+                    margin-right: 16px;
+                }
+            }
+        }
+        .wrapp__inforDiv{
+            width: 100%;
+            margin: 24px 0 48px 0;
+            .wrapp__inforDiv--p{
+                color: $greyDark;
+                font-size: 1.2em;
+                padding: 8px 16px;
+            }
+        }
+        .wrapp__contenedor{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 16px 0;
+            .wrapp__contenedor--card{
+                width: calc(100% / 4 );
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-items: center;
+                transition: ease-in .3s all;
+                transform: scale(1, 1);
+                .card__container{
+                    width:75%;
+                    padding: 24px 0;
+                    border-radius: 26px;
+                    background: $wh;
+                    box-shadow:  -17px 17px 34px #a6a6a6,
+                                17px -17px 34px #ffffff;
+                    overflow: hidden;
+                    .card__divImg{
+                        width: 100%;
+                        padding: 24px 16px 0 16px;
+                        .card__divImg--img{
+                            object-fit: contain;
+                            object-position: center;
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                    .card__divInfor{
+                        display: flex;
+                        flex-flow: row wrap;
+                        justify-content: flex-start;
+                        align-items: center;
+                        padding: 24px 16px;
+                        .card__divInfor--h2{
+                            font-size: 1.2em;
+                            color: $greyDark;
+                            font-weight: bold;
+                        }
+                        .card__divInfor--p{
+                            font-size: 0.9em;
+                            color: $greyDark;
+                            .year{
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+                &:hover{
+                    text-decoration: none;
+                    transform: scale(1.03, 1.03);
+                }
+            }
+        }
+    }
+}
+.footer{
+    width: 100%;
+    margin: 72px auto 0 auto;
+    padding: 32px 7.5% 16px 7.5%;
+    border-top: 2px solid $red;
+    .wrapp{
+        display: grid;
+        grid-template-rows: 15% 70% 15%;
+        grid-template-columns: 25% 75%;
+        align-items: center;
+        .wrapp__titleBrand{
+            width: 170px;
+            height: auto;
+            grid-row: 2/3;
+            grid-column: 1/2;
+            .wrapp__titleBrand--h2{
+                width: 100%;
+                .h2-img{
+                    object-fit: contain;
+                    object-position: center;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+        .wrapp__inforDiv{
+            grid-row: 2/3;
+            grid-column: 2/3;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            align-items: center;
+            .wrapp__inforDiv--title{
+                color: $purple;
+                font-size: 1.5em;
+                width: 100%;
+                padding-bottom: 24px;
+                border-bottom: 1px solid $purple;
+            }
+            .wrapp__inforDiv--ul{
+                padding: 24px 16px;
+                .ul-li{
+                    padding: 3px 0;
+                    .ul-li__p{
+                        color: $greyDark;
+                        font-size: 1.2em;
+                    }
+                }
+            }
+        }
+    }
 }

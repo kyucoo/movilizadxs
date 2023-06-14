@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  font-family: "sans-serif";
+  font-family: sans-serif;
 }
 
 /* @font-face {
@@ -30,6 +30,151 @@ h1, h2, h3, h4, h5, h6, p, ul, li, a, p {
 
 ul {
   list-style: none;
+}
+
+.nuestroTrabajo {
+  width: 100%;
+  max-width: 85%;
+  margin: 48px auto;
+}
+.nuestroTrabajo .wrapp .wrapp__titleDiv {
+  width: 100%;
+  margin: 0 0 24px 0;
+}
+.nuestroTrabajo .wrapp .wrapp__titleDiv .wrapp__titleDiv--h1 {
+  color: #5D4FB0;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.nuestroTrabajo .wrapp .wrapp__titleDiv .wrapp__titleDiv--h1::before {
+  content: "";
+  display: inline-block;
+  width: 0.5em;
+  height: 1em;
+  background-color: #FF6B6B;
+  margin-right: 16px;
+}
+.nuestroTrabajo .wrapp .wrapp__inforDiv {
+  width: 100%;
+  margin: 24px 0 48px 0;
+}
+.nuestroTrabajo .wrapp .wrapp__inforDiv .wrapp__inforDiv--p {
+  color: #1a1a1a;
+  font-size: 1.2em;
+  padding: 8px 16px;
+}
+.nuestroTrabajo .wrapp .wrapp__contenedor {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 16px 0;
+}
+.nuestroTrabajo .wrapp .wrapp__contenedor .wrapp__contenedor--card {
+  width: 25%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  transition: ease-in 0.3s all;
+  transform: scale(1, 1);
+}
+.nuestroTrabajo .wrapp .wrapp__contenedor .wrapp__contenedor--card .card__container {
+  width: 75%;
+  padding: 24px 0;
+  border-radius: 26px;
+  background: #ffffff;
+  box-shadow: -17px 17px 34px #a6a6a6, 17px -17px 34px #ffffff;
+  overflow: hidden;
+}
+.nuestroTrabajo .wrapp .wrapp__contenedor .wrapp__contenedor--card .card__container .card__divImg {
+  width: 100%;
+  padding: 24px 16px 0 16px;
+}
+.nuestroTrabajo .wrapp .wrapp__contenedor .wrapp__contenedor--card .card__container .card__divImg .card__divImg--img {
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  height: auto;
+}
+.nuestroTrabajo .wrapp .wrapp__contenedor .wrapp__contenedor--card .card__container .card__divInfor {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 24px 16px;
+}
+.nuestroTrabajo .wrapp .wrapp__contenedor .wrapp__contenedor--card .card__container .card__divInfor .card__divInfor--h2 {
+  font-size: 1.2em;
+  color: #1a1a1a;
+  font-weight: bold;
+}
+.nuestroTrabajo .wrapp .wrapp__contenedor .wrapp__contenedor--card .card__container .card__divInfor .card__divInfor--p {
+  font-size: 0.9em;
+  color: #1a1a1a;
+}
+.nuestroTrabajo .wrapp .wrapp__contenedor .wrapp__contenedor--card .card__container .card__divInfor .card__divInfor--p .year {
+  font-weight: bold;
+}
+.nuestroTrabajo .wrapp .wrapp__contenedor .wrapp__contenedor--card:hover {
+  text-decoration: none;
+  transform: scale(1.03, 1.03);
+}
+
+.footer {
+  width: 100%;
+  margin: 72px auto 0 auto;
+  padding: 32px 7.5% 16px 7.5%;
+  border-top: 2px solid #FF6B6B;
+}
+.footer .wrapp {
+  display: grid;
+  grid-template-rows: 15% 70% 15%;
+  grid-template-columns: 25% 75%;
+  align-items: center;
+}
+.footer .wrapp .wrapp__titleBrand {
+  width: 170px;
+  height: auto;
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+.footer .wrapp .wrapp__titleBrand .wrapp__titleBrand--h2 {
+  width: 100%;
+}
+.footer .wrapp .wrapp__titleBrand .wrapp__titleBrand--h2 .h2-img {
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  height: auto;
+}
+.footer .wrapp .wrapp__inforDiv {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.footer .wrapp .wrapp__inforDiv .wrapp__inforDiv--title {
+  color: #5D4FB0;
+  font-size: 1.5em;
+  width: 100%;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #5D4FB0;
+}
+.footer .wrapp .wrapp__inforDiv .wrapp__inforDiv--ul {
+  padding: 24px 16px;
+}
+.footer .wrapp .wrapp__inforDiv .wrapp__inforDiv--ul .ul-li {
+  padding: 3px 0;
+}
+.footer .wrapp .wrapp__inforDiv .wrapp__inforDiv--ul .ul-li .ul-li__p {
+  color: #1a1a1a;
+  font-size: 1.2em;
 }
 
 /*# sourceMappingURL=style.css.map */
