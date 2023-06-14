@@ -37,19 +37,26 @@ ul{
     list-style: none;
 }
 .nuestroTrabajo{
+    width: 100%;
+    max-width: 85%;
+    margin: 48px auto;
     .wrapp{
+        .wrapp__titleDiv{
+            width: 100%;
+            margin: 0 0 24px 0;
+        }
         .wrapp__inforDiv{
-
+            width: 100%;
+            margin: 24px 0 48px 0;
         }
         .wrapp__contenedor{
             width: 100%;
-            max-width: 85%;
             height: auto;
             display: flex;
             flex-flow: row wrap;
             justify-content: center;
             align-items: center;
-            margin: 0 auto;
+            margin: 16px 0;
             .wrapp__contenedor--card{
                 width: calc(100% / 4 );
                 display: flex;
@@ -99,6 +106,58 @@ ul{
                 &:hover{
                     text-decoration: none;
                     transform: scale(1.03, 1.03);
+                }
+            }
+        }
+    }
+}
+.footer{
+    width: 100%;
+    margin: 72px auto 0 auto;
+    padding: 32px 7.5% 16px 7.5%;
+    border-top: 2px solid $red;
+    .wrapp{
+        display: grid;
+        grid-template-rows: 15% 70% 15%;
+        grid-template-columns: 25% 75%;
+        align-items: center;
+        .wrapp__titleBrand{
+            width: 170px;
+            height: auto;
+            grid-row: 2/3;
+            grid-column: 1/2;
+            .wrapp__titleBrand--h2{
+                width: 100%;
+                .h2-img{
+                    object-fit: contain;
+                    object-position: center;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+        .wrapp__inforDiv{
+            grid-row: 2/3;
+            grid-column: 2/3;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            align-items: center;
+            .wrapp__inforDiv--title{
+                color: $purple;
+                font-size: 1.5em;
+                width: 100%;
+                padding-bottom: 24px;
+                border-bottom: 1px solid $purple;
+            }
+            .wrapp__inforDiv--ul{
+                padding: 24px 16px;
+                .ul-li{
+                    padding: 3px 0;
+                    .ul-li__p{
+                        color: $greyDark;
+                        font-size: 1.2em;
+                    }
                 }
             }
         }

@@ -32,15 +32,27 @@ ul {
   list-style: none;
 }
 
-.nuestroTrabajo .wrapp .wrapp__contenedor {
+.nuestroTrabajo {
   width: 100%;
   max-width: 85%;
+  margin: 48px auto;
+}
+.nuestroTrabajo .wrapp .wrapp__titleDiv {
+  width: 100%;
+  margin: 0 0 24px 0;
+}
+.nuestroTrabajo .wrapp .wrapp__inforDiv {
+  width: 100%;
+  margin: 24px 0 48px 0;
+}
+.nuestroTrabajo .wrapp .wrapp__contenedor {
+  width: 100%;
   height: auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin: 16px 0;
 }
 .nuestroTrabajo .wrapp .wrapp__contenedor .wrapp__contenedor--card {
   width: 25%;
@@ -91,6 +103,59 @@ ul {
 .nuestroTrabajo .wrapp .wrapp__contenedor .wrapp__contenedor--card:hover {
   text-decoration: none;
   transform: scale(1.03, 1.03);
+}
+
+.footer {
+  width: 100%;
+  margin: 72px auto 0 auto;
+  padding: 32px 7.5% 16px 7.5%;
+  border-top: 2px solid #FF6B6B;
+}
+.footer .wrapp {
+  display: grid;
+  grid-template-rows: 15% 70% 15%;
+  grid-template-columns: 25% 75%;
+  align-items: center;
+}
+.footer .wrapp .wrapp__titleBrand {
+  width: 170px;
+  height: auto;
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+.footer .wrapp .wrapp__titleBrand .wrapp__titleBrand--h2 {
+  width: 100%;
+}
+.footer .wrapp .wrapp__titleBrand .wrapp__titleBrand--h2 .h2-img {
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  height: auto;
+}
+.footer .wrapp .wrapp__inforDiv {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.footer .wrapp .wrapp__inforDiv .wrapp__inforDiv--title {
+  color: #5D4FB0;
+  font-size: 1.5em;
+  width: 100%;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #5D4FB0;
+}
+.footer .wrapp .wrapp__inforDiv .wrapp__inforDiv--ul {
+  padding: 24px 16px;
+}
+.footer .wrapp .wrapp__inforDiv .wrapp__inforDiv--ul .ul-li {
+  padding: 3px 0;
+}
+.footer .wrapp .wrapp__inforDiv .wrapp__inforDiv--ul .ul-li .ul-li__p {
+  color: #1a1a1a;
+  font-size: 1.2em;
 }
 
 /*# sourceMappingURL=style.css.map */
